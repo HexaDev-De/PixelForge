@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="ID-edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="./favicon.ico" type="image/x-icon">
+    <title>PixelForge | HexaDev</title>
+</head>
+
+<body>
+    <!-- Welcome Page -->
+    <div id="welcome-page" class="welcome-page">
+        <h1>Welcome to PixelForge</h1>
+        <p>Unleash your creativity with our pixel art web app! Design and customize vibrant pixel art effortlessly. Whether you're a beginner or an expert, our tools are crafted to make your creative process smooth and enjoyable. Dive into the world of pixel-perfect art today!</p>
+        <button id="get-started" class="get-started-btn">Get Started</button>
+    </div>
+
+    <!-- Main Grid Generator -->
+    <div id="main-content" class="wrapper" style="display: none;">
+        <div class="options">
+            <div class="opt-wrapper">
+                <div class="slider">
+                    <label for="width-range">Grid Width</label>
+                    <input type="range" id="width-range" min="1" max="35">
+                    <span id="width-value">00</span>
+                </div>
+                <div class="slider">
+                    <label for="height-range">Grid Height</label>
+                    <input type="range" id="height-range" min="1" max="35">
+                    <span id="height-value">00</span>
+                </div>
+            </div>
+
+            
+            <div class="opt-wrapper">
+                <button id="submit-grid">Create Grid</button>
+                <button id="clear-grid">Clear Grid</button>
+                <input type="color" id="color-input">
+                <button id="erase-btn">Erase</button>
+                <button id="paint-btn">Paint</button>
+            </div>
+        </div>
+
+        <div class="container"></div>
+    </div>
+
+    <script src="index.js"></script>
+</body>
+
+</html>
